@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Build production bundle
-        run: npm run build -- --configuration production --base-href=/sanabel/
+        run: npm run build -- --base-href=/sanabel/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
