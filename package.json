@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build --configuration production",
+    "build": "ng build --configuration production --base-href=/sanabel/",
     "watch": "ng build --watch --configuration development",
-    "deploy": "npm run build -- --base-href=/sanabel/ && gh-pages -d dist/sanabel-quranic-complex"
+    "deploy": "npm run build && gh-pages -d dist/sanabel-quranic-complex/browser"
   },
   "private": true,
   "dependencies": {
