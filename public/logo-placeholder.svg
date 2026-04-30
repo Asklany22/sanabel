@@ -1,0 +1,7 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="38" fill="#123D33"/>
+  <circle cx="80" cy="80" r="54" fill="#F6EFE2"/>
+  <path d="M46 84c18-34 50-39 68-8-23-9-41-3-56 20 12-8 27-10 48-3-15 19-44 20-60-9z" fill="#C9A24D"/>
+  <path d="M80 38c16 18 20 42 0 70-20-28-16-52 0-70z" fill="#1D5A49"/>
+  <text x="80" y="128" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700" fill="#123D33">السنابل</text>
+</svg>

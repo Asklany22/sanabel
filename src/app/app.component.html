@@ -1,0 +1,308 @@
+<div class="site-shell">
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-links">
+        <span>📞 05X-XXX-XXXX</span>
+        <span>✉️ info@alsanabel.org</span>
+      </div>
+      <a class="whatsapp-link" href="https://wa.me/966000000000" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" (click)="closeMenu()">
+        <img src="/logo-placeholder.svg" alt="شعار مجمع السنابل القرآني">
+        <div>
+          <strong>مجمع السنابل القرآني</strong>
+          <span>نحو جيلٍ متقنٍ لكتاب الله</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="فتح القائمة" (click)="toggleMenu()">☰</button>
+
+      <nav class="nav-links" [class.open]="mobileMenuOpen">
+        <a href="#home" (click)="closeMenu()">الرئيسية</a>
+        <a href="#about" (click)="closeMenu()">من نحن</a>
+        <a href="#programs" (click)="closeMenu()">البرامج</a>
+        <a href="#student-platform" (click)="closeMenu()">منصة الطالب</a>
+        <a href="#news" (click)="closeMenu()">الأخبار</a>
+        <a href="#registration" (click)="closeMenu()">التسجيل</a>
+        <a href="#contact" (click)="closeMenu()">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">تسجيل مفتوح في البرامج القرآنية</p>
+          <h1>مجمع السنابل القرآني<br><span>نحو جيلٍ متقنٍ لكتاب الله</span></h1>
+          <p>
+            نقدم برامج قرآنية متميزة لتحفيظ كتاب الله وتعليمه بأساليب تربوية وتقنية حديثة،
+            بإشراف نخبة من المعلمين المؤهلين.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#registration">سجل الآن</a>
+            <a class="btn btn-outline" href="#programs">استعرض البرامج</a>
+          </div>
+        </div>
+
+        <div class="hero-card card">
+          <div class="quran-frame">
+            <span class="arabesque">۞</span>
+            <h2>ابدأ رحلتك مع القرآن اليوم</h2>
+            <p>مسار واضح للحفظ، متابعة مستمرة، وبيئة تربوية تعين الطالب على الإتقان.</p>
+          </div>
+          <div class="hero-mini-grid">
+            <div>حلقات تحفيظ</div>
+            <div>برامج تعليمية</div>
+            <div>مسابقات وأنشطة</div>
+            <div>منصة رقمية</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item" *ngFor="let item of trustItems">✓ {{ item }}</div>
+      </div>
+    </section>
+
+    <section class="about section-padding" id="about">
+      <div class="container split-grid">
+        <div>
+          <p class="section-label">من نحن</p>
+          <h2 class="section-title">بيئة تعليمية متكاملة لحفظ القرآن وتعلمه والعمل به</h2>
+          <p class="section-copy">
+            مجمع السنابل القرآني يهدف إلى تعليم كتاب الله تعالى حفظًا وتلاوةً وتدبرًا،
+            وفق منهجية تربوية تجمع بين الإتقان والعناية بالطالب سلوكيًا وعلميًا.
+          </p>
+          <p class="section-copy">
+            يعمل المجمع بإشراف جمعية خيركم لتحفيظ القرآن بجدة، ويسعى إلى إعداد جيل قرآني
+            متميز يسهم في خدمة دينه ومجتمعه.
+          </p>
+        </div>
+
+        <div class="mission-card card">
+          <div>
+            <span>الرؤية</span>
+            <strong>إعداد جيل متقن لكتاب الله علمًا وعملاً</strong>
+          </div>
+          <div>
+            <span>الرسالة</span>
+            <strong>تقديم تعليم قرآني متميز بأساليب تربوية وتقنية حديثة</strong>
+          </div>
+          <div>
+            <span>القيم</span>
+            <strong>الإتقان – الإخلاص – الانضباط – الابتكار</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card" *ngFor="let stat of stats">
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label }}</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs section-padding" id="programs">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">برامجنا القرآنية</p>
+          <h2 class="section-title">مسارات مصممة حسب عمر الطالب ومستوى الحفظ</h2>
+          <p class="section-copy">
+            اختر البرنامج المناسب، وابدأ بخطة واضحة تجمع بين الحفظ، المراجعة، التلاوة، والتحفيز.
+          </p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card card" *ngFor="let program of programs">
+            <span class="program-icon">{{ program.icon }}</span>
+            <h3>{{ program.title }}</h3>
+            <p class="program-subtitle">{{ program.subtitle }}</p>
+            <p>{{ program.details }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="student-platform section-padding" id="student-platform">
+      <div class="container platform-wrap">
+        <div class="platform-copy">
+          <p class="section-label">لوحة إضافية مميزة</p>
+          <h2 class="section-title">منصة الطالب</h2>
+          <p class="section-copy">
+            لوحة رقمية تساعد ولي الأمر والطالب على متابعة الحضور، مستوى الحفظ،
+            الملاحظات، والتواصل مع المعلم بطريقة سهلة ومنظمة.
+          </p>
+          <a class="btn btn-primary" href="#registration">اطلب الانضمام</a>
+        </div>
+
+        <div class="dashboard-card card">
+          <div class="dashboard-header">
+            <strong>ملخص الطالب</strong>
+            <span>هذا الأسبوع</span>
+          </div>
+          <div class="progress-row">
+            <span>الحضور</span>
+            <div><i style="width: 86%"></i></div>
+            <b>86%</b>
+          </div>
+          <div class="progress-row">
+            <span>الحفظ</span>
+            <div><i style="width: 72%"></i></div>
+            <b>72%</b>
+          </div>
+          <div class="progress-row">
+            <span>المراجعة</span>
+            <div><i style="width: 64%"></i></div>
+            <b>64%</b>
+          </div>
+          <p class="teacher-note">ملاحظة المعلم: أداء جيد، يحتاج الطالب إلى تثبيت آخر وجهين قبل الاختبار.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section-padding" id="news">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">الأخبار والإعلانات</p>
+          <h2 class="section-title">آخر مستجدات المجمع</h2>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card card" *ngFor="let item of news">
+            <span>{{ item.date }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.summary }}</p>
+            <a href="#contact">اقرأ المزيد ←</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-padding" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">معرض الصور</p>
+          <h2 class="section-title">لقطات من بيئة المجمع وأنشطته</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-tile" *ngFor="let item of gallery">
+            <span>{{ item.title }}</span>
+            <strong>{{ item.label }}</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration section-padding" id="registration">
+      <div class="container registration-grid">
+        <div>
+          <p class="section-label">التسجيل</p>
+          <h2 class="section-title">سجل بيانات الطالب</h2>
+          <p class="section-copy">
+            املأ البيانات الأساسية وسيتم التواصل معكم لاستكمال إجراءات الانضمام للبرنامج المناسب.
+          </p>
+        </div>
+
+        <form class="registration-form card" (ngSubmit)="submitRegistration()" #registrationForm="ngForm">
+          <label>
+            اسم الطالب
+            <input name="studentName" [(ngModel)]="registration.studentName" required placeholder="اكتب اسم الطالب">
+          </label>
+
+          <label>
+            المرحلة الدراسية
+            <select name="stage" [(ngModel)]="registration.stage" required>
+              <option value="">اختر المرحلة</option>
+              <option>ابتدائي</option>
+              <option>متوسط</option>
+              <option>ثانوي</option>
+              <option>كبار</option>
+            </select>
+          </label>
+
+          <label>
+            رقم الجوال
+            <input name="phone" [(ngModel)]="registration.phone" required placeholder="05XXXXXXXX">
+          </label>
+
+          <label>
+            اسم ولي الأمر
+            <input name="guardianName" [(ngModel)]="registration.guardianName" required placeholder="اسم ولي الأمر">
+          </label>
+
+          <label>
+            هل يحتاج مواصلات؟
+            <select name="transportation" [(ngModel)]="registration.transportation" required>
+              <option value="">اختر</option>
+              <option>نعم</option>
+              <option>لا</option>
+            </select>
+          </label>
+
+          <label>
+            اختيار البرنامج
+            <select name="program" [(ngModel)]="registration.program" required>
+              <option value="">اختر البرنامج</option>
+              <option>حلقات التحفيظ</option>
+              <option>تحسين التلاوة</option>
+              <option>الإقراء والإجازة</option>
+              <option>برنامج صناعة حافظ</option>
+              <option>حلقات الكبار</option>
+              <option>برنامج موسمي</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary" type="submit" [disabled]="registrationForm.invalid">إرسال التسجيل</button>
+          <p class="success-message" *ngIf="successMessage">{{ successMessage }}</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact section-padding" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="section-label">تواصل معنا</p>
+          <h2 class="section-title">نسعد باستقبال استفساراتكم</h2>
+          <p class="section-copy">يمكنكم التواصل عبر الجوال، واتساب، أو زيارة موقع المجمع على الخريطة.</p>
+        </div>
+
+        <div class="contact-list">
+          <a href="tel:+966000000000">📞 05X-XXX-XXXX</a>
+          <a href="https://wa.me/966000000000" target="_blank" rel="noopener">💬 واتساب</a>
+          <a href="#" target="_blank" rel="noopener">📍 الموقع على الخريطة</a>
+          <a href="#" target="_blank" rel="noopener">𝕏 تويتر</a>
+          <a href="#" target="_blank" rel="noopener">◎ إنستقرام</a>
+          <a href="#" target="_blank" rel="noopener">✈ تيليجرام</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>مجمع السنابل القرآني</strong>
+        <p>نحو إتقان كتاب الله، علمًا وعملاً.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">من نحن</a>
+        <a href="#programs">البرامج</a>
+        <a href="#registration">التسجيل</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="copyright">جميع الحقوق محفوظة © مجمع السنابل القرآني</div>
+  </footer>
+</div>
