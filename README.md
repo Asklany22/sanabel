@@ -2,7 +2,7 @@
 
 A modern Angular 21 application built with TypeScript and Vite, designed for displaying and exploring Islamic Quranic content.
 
-## 📋 Project Overview
+##  Project Overview
 
 **Sanabel** is an Angular-based web application that provides an interactive platform for Quranic studies and exploration. This project demonstrates modern web development practices using:
 
@@ -12,22 +12,22 @@ A modern Angular 21 application built with TypeScript and Vite, designed for dis
 - **Component-Based Architecture** - Modular and reusable UI components
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
 
-## 🚀 Live Demo
+##  Live Demo
 
 The application is automatically deployed to GitHub Pages with every push to the `main` branch.
 
 **Live URL:** [https://Asklany22.github.io/sanabel/](https://Asklany22.github.io/sanabel/)
 
-## 📦 Features
+##  Features
 
-- ✨ Modern Angular components
-- 🎨 Clean and intuitive user interface
-- 📱 Fully responsive design
-- ⚡ Fast performance with Vite
-- 🔄 Automatic CI/CD deployment via GitHub Actions
-- 📖 Optimized for content exploration
+-  Modern Angular components
+-  Clean and intuitive user interface
+-  Fully responsive design
+-  Fast performance with Vite
+-  Automatic CI/CD deployment via GitHub Actions
+-  Optimized for content exploration
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Version |
 |-----------|---------|
@@ -37,7 +37,7 @@ The application is automatically deployed to GitHub Pages with every push to the
 | Angular CLI | ^21.0.0 |
 | Node.js | 20+ (recommended) |
 
-## 📥 Installation
+##  Installation
 
 ### Prerequisites
 - Node.js 20 or higher
@@ -65,7 +65,7 @@ The application is automatically deployed to GitHub Pages with every push to the
    ```
    The application will open automatically at `http://localhost:4200`
 
-## 🔨 Development Commands
+##  Development Commands
 
 ### Development Server
 ```bash
@@ -103,7 +103,7 @@ ng lint
 ```
 Analyzes the code for stylistic and programming errors.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 sanabel/
@@ -124,7 +124,7 @@ sanabel/
     └── deploy-pages.yml           # GitHub Actions CI/CD workflow
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Automatic Deployment (GitHub Pages)
 
@@ -163,7 +163,7 @@ The output files are generated in `dist/sanabel-quranic-complex/`
 4. Output directory: `dist/sanabel-quranic-complex`
 5. Deploy!
 
-## 🔧 Configuration
+##  Configuration
 
 ### Angular Configuration
 Edit `angular.json` to customize:
@@ -181,13 +181,13 @@ Edit `tsconfig.json` and `tsconfig.app.json` to adjust:
 ### Base Href for Different Environments
 The GitHub Actions workflow automatically sets `--base-href=/sanabel/` for GitHub Pages compatibility. For custom domains, modify the workflow file or build command.
 
-## 📊 Performance
+##  Performance
 
 - **Bundle Size:** Optimized with Vite and Angular's production build
 - **Build Time:** Fast incremental builds with Vite
 - **Loading:** Lazy loading support for route-based code splitting
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/YourFeature`
@@ -195,19 +195,19 @@ The GitHub Actions workflow automatically sets `--base-href=/sanabel/` for GitHu
 4. Push to the branch: `git push origin feature/YourFeature`
 5. Open a Pull Request
 
-## 📝 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+##  Author
 
 **Asklany22** - [GitHub Profile](https://github.com/Asklany22)
 
-## 📞 Support
+##  Support
 
 For issues, questions, or suggestions, please open an [issue](https://github.com/Asklany22/sanabel/issues) on GitHub.
 
-## 🔗 Quick Links
+##  Quick Links
 
 - [Angular Documentation](https://angular.io/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
@@ -218,4 +218,4 @@ For issues, questions, or suggestions, please open an [issue](https://github.com
 
 **Last Updated:** April 30, 2026
 
-**Project Status:** Active Development ✅
+**Project Status:** Active Development 
